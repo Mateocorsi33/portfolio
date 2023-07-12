@@ -24,6 +24,7 @@ const Fondo = styled.div`
         flex-direction: column;
         margin-bottom: 0;
         gap: 1rem;
+        margin-top: 0;
     }
 `
 
