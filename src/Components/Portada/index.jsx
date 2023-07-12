@@ -15,7 +15,8 @@ const Fondo = styled.div`
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    margin-bottom: 7rem;
+    margin-bottom: 6rem;
+    margin-top: 2.5rem;
 
     @media (max-width: 800px) {
         display: flex;

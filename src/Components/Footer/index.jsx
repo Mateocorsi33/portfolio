@@ -61,6 +61,10 @@ const Link = styled.a`
     font-weight: 500;
     line-height: normal;
     cursor: pointer;
+    &:hover {
+        transition: .3s;
+        opacity: 70%;
+    }
 `;
 
 const Contacto = styled.div`
@@ -105,7 +109,6 @@ const Footer = () => {
                 <Navegacion>
                     <Titulo>Navegación</Titulo>
                     <Link>Sobre mi</Link>
-                    <Link>Skills</Link>
                     <Link>Proyectos</Link>
                     <Link>Contacto</Link>
                 </Navegacion>

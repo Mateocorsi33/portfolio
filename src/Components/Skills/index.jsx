@@ -27,6 +27,9 @@ const SkillsContent = styled.div`
 const Img = styled.img`
     width: 5rem;
     height: 5rem;
+    &:hover {
+        transform: scale(1.1);
+    }
     @media (max-width: 800px) {
         width: 2.5rem;
         height: 2.5rem;

@@ -97,8 +97,14 @@ const Text2 = styled.div`
 const Img = styled.img`
     width: 20rem;
     height: fit-content;
+    cursor: pointer;
+    &:hover {
+        width: 20.5rem;
+        transition: .3s;
+        opacity: 70%;
+    }
     @media (max-width: 800px) {
-        width:30%;
+        width:70%;
     }
 `
 

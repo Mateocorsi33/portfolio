@@ -34,6 +34,9 @@ const Div = styled.div`
     display: flex;
     align-items: center;
     gap:1rem;
+    &:hover {
+        transform: scale(1.1);
+    }
 `
 
 const Img = styled.img`

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 import email from '../../assets/email.png'
 import linkedin from '../../assets/linkedin.png';
 import github from '../../assets/github.png';
@@ -17,17 +18,6 @@ const Nav = styled.nav`
       justify-content: center;
       height: auto;
       margin: 0;
-    }
-`;
-
-const Nombre = styled.a`
-  color: #478484;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.375rem;
-  text-decoration: none;
-
-  @media (max-width: 800px) {
-      font-size: 1rem;
     }
 `;
 
@@ -49,20 +39,54 @@ const List = styled.li`
   list-style-type: none;
 `;
 
-const NavLink = styled.a`
+const InicioLink = styled(Link)`
+    text-decoration: none;
+    color: #478484;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.375rem;
+    cursor: pointer;
+    @media (max-width: 800px) {
+      font-size: 1rem;
+    }
+`
+
+const NavLink = styled(Link)`
+    text-decoration: none;
     color: #478484;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1rem;
+    cursor: pointer;
+    &:hover {
+        transition: .3s;
+        padding: 0 .2rem;
+        opacity: 70%;
+    }
     @media (max-width: 800px) {
       font-size: .8rem;
+      text-decoration: none;
     }
 `;
+
+const LinkRedes = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+        transition: .3s;
+        padding: 0 .2rem;
+        opacity: 70%;
+    }
+`
 
 const Iconos = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  &:hover {
+        transition: .3s;
+        padding: 0;
+        opacity: 70%;
+    }
 `
 
 const Img = styled.img`
@@ -77,16 +101,15 @@ const Img = styled.img`
 const Navbar = () => {
   return (
     <Nav>
-      <Nombre>Mateo Corsi</Nombre>
+      <InicioLink to="/" style={{}}>Mateo Corsi</InicioLink>
       <Ul>
-          <List><NavLink to='/sobre-mi'>Sobre mi</NavLink></List>
-          <List><NavLink to='/skills'>Skills</NavLink></List>
-          <List><NavLink to='/proyectos'>Proyectos</NavLink></List>
-          <List><NavLink to='/contacto'>Contacto</NavLink></List>
+          <List><NavLink to="/sobre-mi" style={{}}>Sobre mi</NavLink></List>
+          <List><NavLink to='/proyectos' style={{}}>Proyectos</NavLink></List>
+          <List><NavLink to='/contacto' style={{}}>Contacto</NavLink></List>
           <Iconos>
-            <NavLink to=''><Img src={email}/></NavLink>
-            <NavLink to=''><Img src={linkedin}/></NavLink>
-            <NavLink to=''><Img src={github}/></NavLink>
+            <LinkRedes href="mailto: Mateofrontend@gmail.com"><Img src={email}/></LinkRedes>
+            <LinkRedes href="http://www.linkedin.com/in/mateocorsi"><Img src={linkedin}/></LinkRedes>
+            <LinkRedes href="http://github.com/Mateofront"><Img src={github}/></LinkRedes>
           </Iconos>
       </Ul>
     </Nav>
