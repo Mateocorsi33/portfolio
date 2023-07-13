@@ -172,14 +172,14 @@ const Proyectos = () => {
                 <Img src={imgProyect1}/>
                 <Text>
                     <Encabezado>GRANJA LOS PIBES</Encabezado>
-                    <Descripcion>Desarrollo y diseño de pagina web para ong llamada Granja Los Pibes, desarrollo responsivo utilizando React y Styled Components</Descripcion>
+                    <Descripcion>Desarrollo y diseño de pagina web para la ONG, Granja Los Pibes, desarrollo responsive utilizando React y Styled Components</Descripcion>
                     <Boton>Ver completo<Vector src={vector}/></Boton>
                 </Text>
             </Proyecto1>
             <Proyecto2>
                 <Text2>
                     <Encabezado>ENCRIPTADOR DE TEXTO</Encabezado>
-                    <Descripcion>Desarrollo de un encriptador de texto, utilizando HTML5, CSS3 y JAVASCRIPT</Descripcion>
+                    <Descripcion>Para este proyecto desarrollé un encriptador de texto utilizando HTML5, CSS3 y JavaScript.</Descripcion>
                     <Boton>Ver completo<Vector src={vector}/></Boton>
                 </Text2>
                 <Img src={imgProyect2}/>

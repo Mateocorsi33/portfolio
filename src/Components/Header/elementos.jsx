@@ -30,6 +30,7 @@ const InicioLink = styled(Link)`
     color: #478484;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.375rem;
+    font-weight: 500;
     cursor: pointer;
     @media (max-width: 800px) {
       display: none;
@@ -103,8 +104,7 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-          <InicioLink to="/" style={{}}>Mateo Corsi</InicioLink>
-          
+          <InicioLink to="/" style={{}}>MATEO CORSI</InicioLink> 
         <Ul>
             <List><NavLink to="/sobre-mi" style={{}}>Sobre mi</NavLink></List>
             <List><NavLink to='/proyectos' style={{}}>Proyectos</NavLink></List>

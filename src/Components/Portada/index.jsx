@@ -112,10 +112,10 @@ const Vector = styled.img`
 
 const Imagen = styled.img`
     width: 20rem;
-    height: 17rem;
+    height: 20rem;
     border-radius: 10rem;
     margin-top: 3rem;
-    
+
     @media (max-width: 800px) {
         order: 1; 
     }    

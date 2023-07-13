@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 
 const FooterContent = styled.div`
     width: 80%;
     height: auto;
+    margin-top: 8rem;
     padding: 3rem 10% 1rem 10%;
     background-color: #478484;
     display: flex;
@@ -17,6 +19,7 @@ const Nombre = styled.a`
   color: #ffffff;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.3rem;
+  font-weight: 500;
   text-decoration: none;
   cursor: pointer;
 `;
@@ -53,7 +56,8 @@ const Navegacion = styled.div`
     gap:.8rem;
 `;
 
-const Link = styled.a`
+const Links = styled(Link)`
+    text-decoration: none;
     color: #FFF;
     font-family: Roboto Condensed;
     font-size: .8rem;
@@ -104,13 +108,13 @@ const DivCopy = styled.div`
 const Footer = () => {
     return(
         <FooterContent>
-                <Nombre>Mateo Corsi</Nombre>
+                <Links to="/" style={{}}><Nombre>MATEO CORSI</Nombre></Links>
             <DivLinks>
                 <Navegacion>
                     <Titulo>Navegación</Titulo>
-                    <Link>Sobre mi</Link>
-                    <Link>Proyectos</Link>
-                    <Link>Contacto</Link>
+                    <Links to="/sobre-mi" style={{}}>Sobre mi</Links>
+                    <Links to='/proyectos' style={{}}>Proyectos</Links>
+                    <Links to='/contacto' style={{}}>Contacto</Links>
                 </Navegacion>
                 <Contacto>
                     <Titulo>Contacto</Titulo>

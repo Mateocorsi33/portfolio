@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Title from "../titulo";
-import fotoProOne from "../../assets/proyectogranja.png";
-import fotoProTwo from "../../assets/proyectoencriptador.png";
-import fotoProThree from "../../assets/proyectoorg.png";
+import fotoProOne from "../../assets/proyectogranj.png";
+import fotoProTwo from "../../assets/proyectoencriptado.png";
+import fotoProThree from "../../assets/diseño.png";
 
 
 
@@ -55,6 +55,8 @@ const Img = styled.img`
 `
 
 const Titulo = styled.h1`
+    width: 20rem;
+    text-align: center;
     margin: 0;
     color: #464646;
     font-family: Roboto Condensed;
@@ -80,15 +82,15 @@ const PageProyectos = () => {
             <ContentProyect>
                 <Proyect href="https://webgranjalospibes.vercel.app/">
                     <Img src={fotoProOne}/>
-                    <Titulo>GRANJA LOS PIBES</Titulo>
+                    <Titulo>Diseño y Desarrollo Web - GRANJA LOS PIBES</Titulo>
                 </Proyect>
                 <Proyect href="https://encriptador-mateofront.vercel.app/">
                     <Img src={fotoProTwo}/>
-                    <Titulo>ENCRIPTADOR DE TEXTO</Titulo>
+                    <Titulo>Desarrollo Web - ENCRIPTADOR DE TEXTO</Titulo>
                 </Proyect>
-                <Proyect href="https://org-mateofront.vercel.app/">
+                <Proyect href="https://www.figma.com/proto/OC7FuSrgj7XxwHWUiddgzl/Epoca-Dorada?node-id=211-225&starting-point-node-id=211%3A225&mode=design&t=BM7xFUQmvez6qEsf-1">
                     <Img src={fotoProThree}/>
-                    <Titulo>ORG</Titulo>
+                    <Titulo>Diseño de aplicacion movil</Titulo>
                 </Proyect>
             </ContentProyect>
         </>
