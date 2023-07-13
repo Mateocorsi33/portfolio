@@ -15,7 +15,7 @@ const ContentContacto = styled.div`
     padding: 5%;
     gap: 10%;
     @media (max-width: 800px) {
-            
+        gap:1rem;
     }
 `
 
@@ -29,7 +29,8 @@ const Parrafo = styled.div`
     color: #478484;
     text-align: center;
     @media (max-width: 800px) {
-            
+        width: 90%;
+        font-size: 1rem;
     }
 `
 
@@ -41,6 +42,7 @@ const DivIconos = styled.div`
     gap: 3rem;
     @media (max-width: 800px) {
         flex-direction: column;
+        gap: 1rem;
     }
 `
 
@@ -52,6 +54,9 @@ const Div = styled.div`
     &:hover {
         transform: scale(1.1);
     }
+    @media (max-width: 800px) {
+        padding: .5rem;
+    }    
 `
 
 const Img = styled.img`

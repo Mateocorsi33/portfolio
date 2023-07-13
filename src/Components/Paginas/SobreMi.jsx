@@ -18,9 +18,6 @@ import discord from "../../assets/discord.png";
 
 
 
-
-
-
 const ContentSobreMi = styled.div`
     display: flex;
     flex-direction: row;
@@ -29,7 +26,9 @@ const ContentSobreMi = styled.div`
     padding: 5%;
     gap: 10%;
     @media (max-width: 800px) {
-            
+            flex-direction: column;
+            align-items: center;
+            gap:1rem;
     }
 `
 
@@ -40,7 +39,7 @@ const DivImg = styled.div`
     width: 30%;
     gap: 3.5rem;
     @media (max-width: 800px) {
-            
+            width: 80%;
     }
 `
 
@@ -109,7 +108,8 @@ const DivText = styled.div`
     width: 50%;
     gap: 3rem;
     @media (max-width: 800px) {
-            
+        width: 90%;
+        padding: 3rem 0 0 0;
     }
 `
 
@@ -121,7 +121,8 @@ const Parrafo = styled.div`
     color: #478484;
     text-align: start;
     @media (max-width: 800px) {
-            
+        text-align: center;
+        font-size: 1rem;
     }
 `
 

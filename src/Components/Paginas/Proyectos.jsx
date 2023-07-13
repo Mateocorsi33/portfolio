@@ -16,12 +16,8 @@ const ContentProyect = styled.div`
     gap: 5rem;
     width: 90%;
     padding: 5%;
-
-    &:hover {
-        
-    }
     @media (max-width: 800px) {
-        
+        gap: 2rem;
     }
 `
 
@@ -36,7 +32,8 @@ const Proyect = styled.a`
         transform: scale(1.1);
     }
     @media (max-width: 800px) {
-        
+        padding: 2rem 0 3.5rem 0;
+        border-bottom: 1px solid #C2B27F;
     }
 `
 
@@ -50,7 +47,8 @@ const Img = styled.img`
         opacity: 70%;
     }
     @media (max-width: 800px) {
-        
+        width: 70%;
+        height: auto;
     }
 `
 
@@ -65,11 +63,8 @@ const Titulo = styled.h1`
     font-weight: 300;
     line-height: normal;
     cursor: pointer;
-    &:hover {
-        
-    }
     @media (max-width: 800px) {
-        
+        font-size: 1.3rem;
     }
 `
 
