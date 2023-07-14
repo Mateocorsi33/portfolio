@@ -156,7 +156,7 @@ const PageSobreMi = () => {
                 </DivImg>
                 <DivText>
                     <Parrafo>
-                    ¡Hola! Soy un Desarrollador Front End en busca de una oportunidad laboral como Trainee Developer. Me considero una persona proactiva, responsable y comprometida con mi trabajo. Tengo habilidades en lenguajes de programación como HTML5, CSS3 y JavaScript, así como en librerías como React y Styled-Components. Además, cuento con conocimientos en el área de diseño UX/UI y manejo de herramientas como Figma y Adobe XD.
+                    ¡Hola! Soy un Desarrollador Front End en busca de nuevas oportunidades laborales. Me considero una persona proactiva, responsable y comprometida con mi trabajo. Tengo habilidades en lenguajes de programación como HTML5, CSS3 y JavaScript, así como en librerías como React y Styled-Components. Además, cuento con conocimientos en el área de diseño UX/UI y manejo de herramientas como Figma y Adobe XD.
                     </Parrafo>
                     <Parrafo>
                     He realizado proyectos como freelance en el desarrollo de páginas web responsives, lo que me ha permitido adquirir experiencia en el trabajo con clientes reales y en la gestión de proyectos. Gracias a esto, he desarrollado habilidades en relación a la resolución de problemas, la comunicación efectiva y la gestión del tiempo. Me considero una persona responsable y que se encuentra siempre en la búsqueda de nuevos aprendizajes. Me gusta encarar proyectos nuevos y poder llevarlos a la mejor versión posible con mucha dedicación, compromiso y una comunicación fluida como base de todo éxito.
