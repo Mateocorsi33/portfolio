@@ -8,13 +8,13 @@ import cv from "../../assets/cv.pdf";
 
 const Fondo = styled.div`
     width: auto;
-    height: 25rem;
+    height: auto;
     background-image: url(${fondo});
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
+    gap: 1rem;
     margin-bottom: 6rem;
     margin-top: 2.5rem;
 
@@ -29,7 +29,7 @@ const Fondo = styled.div`
 `
 
 const Texto = styled.div`
-    width: 39rem;
+    width: 48rem;
     margin-top: 3rem;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -44,8 +44,8 @@ const Texto = styled.div`
 `
 
 const Titulo = styled.h1`
-    font-size: 52px;
-    font-weight: 400;
+    font-size: 3.6rem;
+    font-weight: 500;
     color: #464646;
     margin: 0;
     @media (max-width: 800px) {
@@ -111,15 +111,37 @@ const Vector = styled.img`
 `
 
 const Imagen = styled.img`
-    width: 20rem;
-    height: 20rem;
+    width: 22rem;
+    height: 22rem;
     border-radius: 10rem;
     margin-top: 3rem;
 
+    /* &:hover {
+        animation-duration: 2s;
+        animation-name: slidein;
+    }
+
+    @keyframes slidein {
+        from {
+            margin-left: 4rem;
+            width: 100%
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    } */
+
     @media (max-width: 800px) {
+        width:16rem;
+        height:16rem;
+        border-radius: 0;
         order: 1; 
     }    
 `
+
+
 
 const Portada = () => {
     return(

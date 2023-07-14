@@ -54,7 +54,8 @@ const NavLink = styled(Link)`
     }
     @media (max-width: 800px) {
       font-size: 1rem;
-      text-decoration: none; 
+      text-decoration: none;
+      color: #ffffff;
     }
 `;
 
@@ -131,8 +132,8 @@ const BotonMenu = styled.button`
 const ImgMenu = styled.img`
     display: flex;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
 
     &:hover {
             transition: .3s;
@@ -162,11 +163,10 @@ const Ul = styled.ul`
       justify-content: center;
       text-align: center;
       flex-direction: column;
-      padding: 0;
-      gap:1rem;
-      &.show {
-            transition: opacity 0.2s ease-in-out;
-        }
+      background-color: #478484;
+      box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.09);
+      padding: 1rem 0 0 0;
+      gap: 1.5rem;
     }
 `;
 
@@ -194,7 +194,7 @@ const Menu = () => {
   return (
     <>
         <Nav>
-            <InicioLink to="/" style={{}} onClick={closeMenu}>Mateo Corsi</InicioLink>
+            <InicioLink to="/" style={{}} onClick={closeMenu}>MATEO CORSI</InicioLink>
             <BotonMenu onClick={() => setShowMenu(!showMenu)}>
                 {showMenu ? <ImgClose src={close} alt="close"/> : <ImgMenu src={menu}/>}
             </BotonMenu>

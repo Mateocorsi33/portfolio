@@ -97,6 +97,7 @@ const Text2 = styled.div`
 const Img = styled.img`
     width: 20rem;
     height: fit-content;
+    border-radius: 10px;
     cursor: pointer;
     &:hover {
         width: 20.5rem;
@@ -110,7 +111,7 @@ const Img = styled.img`
 
 const Encabezado = styled.h1`
     width: 40rem;
-    color: #478484;
+    color: #2e5656;
     font-family: Roboto Condensed;
     font-size: 2rem;
     font-style: normal;

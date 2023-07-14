@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Title from "../titulo";
-import email from "../../assets/email.png";
-import whatsapp from "../../assets/whatsapp.png";
-import linkedin from "../../assets/linkedin.png";
-import github from "../../assets/github.png";
+import email from "../../assets/emailcolor.png";
+import whatsapp from "../../assets/whacolor.png";
+import linkedin from "../../assets/linkcolor.png";
+import github from "../../assets/github2.png";
 
 
 

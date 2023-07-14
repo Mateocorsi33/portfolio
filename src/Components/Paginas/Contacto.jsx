@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Title from "../titulo";
-import email from "../../assets/email.png";
-import whatsapp from "../../assets/whatsapp.png";
-import linkedin from "../../assets/linkedin.png";
-import github from "../../assets/github.png";
+import email from "../../assets/emailcolor.png";
+import whatsapp from "../../assets/whacolor.png";
+import linkedin from "../../assets/linkcolor.png";
+import github from "../../assets/github2.png";
 
 const ContentContacto = styled.div`
     display: flex;
@@ -12,7 +12,7 @@ const ContentContacto = styled.div`
     justify-content: center;
     align-items: center;
     width: 90%;
-    padding: 5%;
+    padding: 3% 5%;
     gap: 10%;
     @media (max-width: 800px) {
         gap:1rem;
@@ -21,7 +21,7 @@ const ContentContacto = styled.div`
 
 const Parrafo = styled.div`
     width: 40%;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.8rem;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 200;
