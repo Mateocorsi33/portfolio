@@ -61,6 +61,10 @@ const Proyecto2 = styled.div`
     }
 `
 
+const Link = styled.a`
+
+`
+
 const Text = styled.div`
     display: flex;
     flex-direction: column;
@@ -150,6 +154,10 @@ const Boton = styled.a`
     font-weight: 300;
     line-height: normal;
     cursor: pointer;
+    text-decoration: none;
+    &:hover {
+        color: #000000;
+    }
     @media (max-width: 800px) {
         font-size: 1.2rem;
     }
@@ -169,21 +177,21 @@ const Proyectos = () => {
     return(
         <DivPro>
             <Title text="PROYECTOS"/>
-            <Proyecto1>
-                <Img src={imgProyect1}/>
+            <Proyecto1>     
+                <Link href="https://webgranjalospibes.vercel.app/"><Img src={imgProyect1}/></Link>
                 <Text>
                     <Encabezado>GRANJA LOS PIBES</Encabezado>
                     <Descripcion>Desarrollo y diseño de pagina web para la ONG, Granja Los Pibes, desarrollo responsive utilizando React y Styled Components</Descripcion>
-                    <Boton>Ver completo<Vector src={vector}/></Boton>
+                    <Boton href="https://webgranjalospibes.vercel.app/">Ver completo<Vector src={vector}/></Boton>
                 </Text>
             </Proyecto1>
             <Proyecto2>
                 <Text2>
                     <Encabezado>ENCRIPTADOR DE TEXTO</Encabezado>
                     <Descripcion>Para este proyecto desarrollé un encriptador de texto utilizando HTML5, CSS3 y JavaScript.</Descripcion>
-                    <Boton>Ver completo<Vector src={vector}/></Boton>
+                    <Boton href="https://encriptador-mateofront.vercel.app/">Ver completo<Vector src={vector}/></Boton>
                 </Text2>
-                <Img src={imgProyect2}/>
+                <Link href="https://encriptador-mateofront.vercel.app/"><Img src={imgProyect2}/></Link>
             </Proyecto2>
         </DivPro>
     )   
