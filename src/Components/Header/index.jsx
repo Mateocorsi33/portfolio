@@ -8,7 +8,8 @@ const BarraNav = styled.div`
     justify-content: space-between;
 
     @media (max-width: 800px) {
-        margin-top: 2rem;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
         flex-direction: column;
         justify-content: center;
     }

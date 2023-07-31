@@ -6,7 +6,7 @@ import vector from "../../assets/vector-links.png";
 import cv from "../../assets/cv.pdf";
 
 
-const Fondo = styled.div`
+const Fondo = styled.div`  
     width: auto;
     height: auto;
     background-image: url(${fondo});
@@ -19,6 +19,7 @@ const Fondo = styled.div`
     margin-top: 2.5rem;
 
     @media (max-width: 800px) {
+        background-attachment: fixed;
         display: flex;
         height: auto;
         flex-direction: column;

@@ -166,6 +166,7 @@ const Ul = styled.ul`
       background-color: #478484;
       box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.09);
       padding: 1rem 0 0 0;
+      margin: .5rem 0;
       gap: 1.5rem;
     }
 `;
