@@ -11,11 +11,12 @@ const DivPro = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #ffffff;
     gap: 1.5rem;
     width: 100%;
-    margin: 6rem 0;
+    padding-bottom: 2.5rem;
     @media (max-width: 800px) {
-        margin: 2rem 0;
+        margin: 0;
     }
 `
 
@@ -34,8 +35,8 @@ const Proyecto1 = styled.div`
         gap: 1rem;
         margin: 1rem 0;
         width: 90%;
-        padding: 2rem 0 0 0;
-        border-top: 1px solid #C2B27F;
+        padding: 2rem 0 3.5rem 0;
+        border-bottom: 1px solid #6F81A9;
     }
 `
 
@@ -54,9 +55,8 @@ const Proyecto2 = styled.div`
         text-align: center;
         gap: 1rem;
         margin: 1rem 0;
-        padding: 2rem 0;
-        border-top: 1px solid #C2B27F;
-        border-bottom: 1px solid #C2B27F;
+        padding: 2rem 0 3.5rem 0;
+        border-bottom: 1px solid #6F81A9;
         width: 90%;
     }
 `
@@ -115,11 +115,10 @@ const Img = styled.img`
 
 const Encabezado = styled.h1`
     width: 40rem;
-    color: #2e5656;
-    font-family: Roboto Condensed;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #6F81A9;
     line-height: normal;
     margin: 0;
     @media (max-width: 800px) {
@@ -129,14 +128,14 @@ const Encabezado = styled.h1`
 `
 
 const Descripcion = styled.p`
-    width: 40rem;
-    color: #478484;
-    font-family: Roboto;
+    width: 36rem;
+    color: #6F81A9;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: normal;
-    margin: 0 0 1rem 0;
+    margin: 0;
     @media (max-width: 800px) {
         font-size: 1.2rem;
         width: 90%;
@@ -147,16 +146,17 @@ const Boton = styled.a`
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: #464646;
-    font-family: Roboto;
+    color: #2B4987;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     cursor: pointer;
     text-decoration: none;
+    margin-top: 3rem;
     &:hover {
-        color: #000000;
+        color: #6F81A9;
     }
     @media (max-width: 800px) {
         font-size: 1.2rem;
@@ -176,18 +176,18 @@ const Vector = styled.img`
 const Proyectos = () => {
     return(
         <DivPro>
-            <Title text="PROYECTOS"/>
+            <Title text="Proyectos"/>
             <Proyecto1>     
                 <Link href="https://webgranjalospibes.vercel.app/"><Img src={imgProyect1}/></Link>
                 <Text>
-                    <Encabezado>GRANJA LOS PIBES</Encabezado>
+                    <Encabezado>Granja Los Pibes</Encabezado>
                     <Descripcion>Desarrollo y diseño de pagina web para la ONG, Granja Los Pibes, desarrollo responsive utilizando React y Styled Components</Descripcion>
                     <Boton href="https://webgranjalospibes.vercel.app/">Ver completo<Vector src={vector}/></Boton>
                 </Text>
             </Proyecto1>
             <Proyecto2>
                 <Text2>
-                    <Encabezado>ENCRIPTADOR DE TEXTO</Encabezado>
+                    <Encabezado>Encriptador de texto</Encabezado>
                     <Descripcion>Para este proyecto desarrollé un encriptador de texto utilizando HTML5, CSS3 y JavaScript.</Descripcion>
                     <Boton href="https://encriptador-mateofront.vercel.app/">Ver completo<Vector src={vector}/></Boton>
                 </Text2>

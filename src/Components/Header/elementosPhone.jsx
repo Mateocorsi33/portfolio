@@ -22,8 +22,8 @@ const Nav = styled.nav`
         justify-content: space-between;
         width: 90%;
         height: auto;
-        padding: 0 5%;
-        margin:0;
+        padding: 0 5% 2% 5%;
+        margin: 0;
     }
 `;
 
@@ -31,7 +31,7 @@ const Nav = styled.nav`
 const InicioLink = styled(Link)`
     display: none;
     text-decoration: none;
-    color: #478484;
+    color: #6F81A9;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.375rem;
     cursor: pointer;
@@ -43,7 +43,7 @@ const InicioLink = styled(Link)`
 
 const NavLink = styled(Link)`
     text-decoration: none;
-    color: #478484;
+    color: #6F81A9;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1rem;
     cursor: pointer;
@@ -110,6 +110,8 @@ const BotonMenu = styled.button`
         display: flex;
         justify-content:center;
         align-items: center;
+        margin: 0;
+        padding: 0;
         background-color: #ffffff;
         border-radius: 10px;
         width: fit-content;
@@ -163,10 +165,10 @@ const Ul = styled.ul`
       justify-content: center;
       text-align: center;
       flex-direction: column;
-      background-color: #478484;
-      box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.09);
+      background-color: #2A4886;
+      /* box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.09); */
       padding: 1rem 0 0 0;
-      margin: .5rem 0;
+      margin: 0;
       gap: 1.5rem;
     }
 `;
@@ -195,7 +197,7 @@ const Menu = () => {
   return (
     <>
         <Nav>
-            <InicioLink to="/" style={{}} onClick={closeMenu}>MATEO CORSI</InicioLink>
+            <InicioLink to="/" style={{}} onClick={closeMenu}>Mateo Corsi</InicioLink>
             <BotonMenu onClick={() => setShowMenu(!showMenu)}>
                 {showMenu ? <ImgClose src={close} alt="close"/> : <ImgMenu src={menu}/>}
             </BotonMenu>

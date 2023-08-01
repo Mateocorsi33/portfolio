@@ -16,7 +16,18 @@ import trello from "../../assets/trello.png";
 import slack from "../../assets/slack.png";
 import discord from "../../assets/discord.png";
 
+const Fondo = styled.div`
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    padding: 2rem 0 4rem 0;
 
+    @media (max-width: 800px) {
+       
+    }
+`
 
 const ContentSobreMi = styled.div`
     display: flex;
@@ -24,6 +35,7 @@ const ContentSobreMi = styled.div`
     justify-content: center;
     width: 90%;
     padding: 5%;
+    margin-bottom: 4rem;
     gap: 10%;
     @media (max-width: 800px) {
             flex-direction: column;
@@ -62,7 +74,7 @@ const Boton = styled.button`
     border: none;
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #000;
+    color: #6F81A9;
     font-family: Roboto Condensed;
     font-size: 1.5rem;
     font-style: normal;
@@ -127,15 +139,17 @@ const DivText = styled.div`
 `
 
 const Parrafo = styled.div`
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 1.4rem;
-    color: #478484;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #6F81A9;
     text-align: start;
+    line-height: 2rem;
+
     @media (max-width: 800px) {
-        text-align: center;
         font-size: 1rem;
+        text-align: center;
+        width: 100%;
     }
 `
 
@@ -146,7 +160,7 @@ const Parrafo = styled.div`
 
 const PageSobreMi = () => {
     return(
-        <>
+        <Fondo>
             <Title text="SOBRE MI" />
             <ContentSobreMi>
                 <DivImg>
@@ -190,7 +204,7 @@ const PageSobreMi = () => {
                     </Parrafo>
                 </DivText>
             </ContentSobreMi>
-        </>
+        </Fondo>
     )
 }
 

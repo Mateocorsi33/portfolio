@@ -6,6 +6,20 @@ import whatsapp from "../../assets/whacolor.png";
 import linkedin from "../../assets/linkcolor.png";
 import github from "../../assets/github2.png";
 
+
+const Fondo = styled.div`
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    padding: 2rem 0 0 0;
+
+    @media (max-width: 800px) {
+        padding: 2.3rem 0 6rem 0;
+    }
+`
+
 const ContentContacto = styled.div`
     display: flex;
     flex-direction: column;
@@ -16,17 +30,18 @@ const ContentContacto = styled.div`
     gap: 10%;
     @media (max-width: 800px) {
         gap:1rem;
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
     }
 `
 
 const Parrafo = styled.div`
     width: 40%;
     padding-bottom: 1.8rem;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 1.5rem;
-    color: #478484;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #6F81A9;
     text-align: center;
     @media (max-width: 800px) {
         width: 90%;
@@ -69,9 +84,9 @@ const Img = styled.img`
 `
 
 const Link = styled.a`
-    color: #478484;
+    color: #6F81A9;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
@@ -91,7 +106,7 @@ const Link = styled.a`
 
 const PageContacto = () => {
     return(
-        <>
+        <Fondo>
             <Title text="CONTACTO" />
             <ContentContacto>
                 <Parrafo>
@@ -121,7 +136,7 @@ const PageContacto = () => {
                     </Div>
                 </DivIconos>
             </ContentContacto>
-        </>
+        </Fondo>
     )
 }
 

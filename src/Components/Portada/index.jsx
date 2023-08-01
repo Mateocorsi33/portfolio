@@ -1,40 +1,34 @@
 import React from "react";
 import styled from "styled-components";
-import fondo from "../../assets/fondo.png";
 import foto from "../../assets/perfil2.png";
-import vector from "../../assets/vector-links.png";
+import vector from "../../assets/vector.png";
 import cv from "../../assets/cv.pdf";
 
 
 const Fondo = styled.div`  
-    width: auto;
-    height: auto;
-    background-image: url(${fondo});
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 6rem;
-    margin-top: 2.5rem;
+    margin: 4rem 5rem 9rem 5rem;
 
     @media (max-width: 800px) {
         background-attachment: fixed;
         display: flex;
         height: auto;
         flex-direction: column;
-        margin-bottom: 0;
         gap: 1rem;
-        margin-top: 0;
+        margin: 0;
+        padding-bottom: 2rem;
     }
 `
 
 const Texto = styled.div`
-    width: 48rem;
-    margin-top: 3rem;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    color: #478484;
+    width: 38rem;
+    margin-top: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
     @media (max-width: 800px) {
         width: 90%;
         text-align: center;
@@ -45,10 +39,11 @@ const Texto = styled.div`
 `
 
 const Titulo = styled.h1`
-    font-size: 3.6rem;
-    font-weight: 500;
-    color: #464646;
+    font-size: 3.8rem;
+    font-weight: 800;
+    color: #ffffff;
     margin: 0;
+
     @media (max-width: 800px) {
         font-size: 2rem;
         padding: .4rem 0;
@@ -56,9 +51,9 @@ const Titulo = styled.h1`
 `
 
 const Subtitulo = styled.h3`
-    font-size: 35px;
-    font-weight: 300;
-    margin: 0.7rem 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: .5rem 0;
     @media (max-width: 800px) {
         font-size: 1.5rem;
         padding-bottom: .4rem;
@@ -66,9 +61,9 @@ const Subtitulo = styled.h3`
 `
 
 const Parrafo = styled.p`
-    font-weight: 200;
-    font-size: 26px;
-    margin: 0.7rem 0;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: .5rem 0;
     @media (max-width: 800px) {
         font-size: 1rem;
         padding-bottom: .4rem;
@@ -79,11 +74,14 @@ const Links = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 6rem;
     gap: 2rem;
     @media (max-width: 800px) {
         justify-content: center;
-        margin-top: 1rem;
+        font-size: .8rem;
+        margin-top: 3rem;
         gap: 2rem;
         width: 100%;
     }
@@ -91,7 +89,7 @@ const Links = styled.div`
 
 const Link = styled.a`
     text-decoration: none;
-    color: #464646;
+    color: #ffffff;
     cursor: pointer;
     &:hover {
         transition: .3s;
@@ -108,12 +106,14 @@ const Link = styled.a`
 `
 
 const Vector = styled.img`
+    width: .8rem;
+    height: .8rem;
     margin-left: 0.4rem;
 `
 
 const Imagen = styled.img`
-    width: 22rem;
-    height: 22rem;
+    width: 25rem;
+    height: 25rem;
     border-radius: 10rem;
     margin-top: 3rem;
 
@@ -137,6 +137,7 @@ const Imagen = styled.img`
     @media (max-width: 800px) {
         width:16rem;
         height:16rem;
+        margin-top: 1rem;
         border-radius: 0;
         order: 1; 
     }    
@@ -149,9 +150,9 @@ const Portada = () => {
             <Fondo>
                 <Texto>
                     <div>
-                        <Titulo>Hola, mi nombre es Mateo!</Titulo>
+                        <Titulo>Hola, soy Mateo!</Titulo>
                         <Subtitulo>Desarrollador Front End</Subtitulo>
-                        <Parrafo>Desarrollo de paginas web responsive. Puedes ver los proyectos que he realizado y ponerte en contacto conmigo.</Parrafo>
+                        <Parrafo>Desarrollo de páginas web responsive. Podés ver los proyectos que he realizado y ponerte en contacto conmigo.</Parrafo>
                     </div>
                     <Links>
                         <Link download= 'CV - Mateo Corsi' href={cv}>Descargar CV<Vector src={vector}/></Link>

@@ -5,6 +5,7 @@ import Skills from "../Skills";
 import Proyectos from "../Proyectos";
 import Contacto from "../Contacto";
 
+
 const Principal = () => {
     return(
         <>

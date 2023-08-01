@@ -11,16 +11,30 @@ import figma from "../../assets/figma.png";
 
 
 
+const Fondo = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    
+    @media (max-width: 800px) {
+    }
+`
+
 const SkillsContent = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 6rem 0;
+    margin: 2.8rem 0 5rem 0;
     gap: 4rem;
     @media (max-width: 800px) {
         flex-wrap: wrap;
         margin: 3rem 0;
+        padding-inline: 5%;
     }
 `
 
@@ -38,8 +52,8 @@ const Img = styled.img`
 
 const Skills = () => {
     return(
-        <>
-            <Title text="SKILLS" />
+        <Fondo>
+            <Title text="Skills" />
             <SkillsContent>
                 <Img src={html5}/>
                 <Img src={css3}/>
@@ -49,7 +63,7 @@ const Skills = () => {
                 <Img src={figma}/>
                 <Img src={adobexd}/>
             </SkillsContent>
-        </>
+        </Fondo>
     )
 }
 

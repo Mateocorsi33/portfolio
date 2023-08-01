@@ -6,12 +6,14 @@ const BarraNav = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 1rem;
 
     @media (max-width: 800px) {
         margin-top: .5rem;
-        margin-bottom: .5rem;
+        padding: 0;
         flex-direction: column;
         justify-content: center;
+        border-bottom: .5px solid #ccd1de;
     }
 `
 

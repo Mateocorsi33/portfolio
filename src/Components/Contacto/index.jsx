@@ -6,16 +6,29 @@ import whatsapp from "../../assets/whacolor.png";
 import linkedin from "../../assets/linkcolor.png";
 import github from "../../assets/github2.png";
 
-
+const Fondo = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-bottom: 4rem;
+    @media (max-width: 800px) {
+            
+    }
+`
 
 const ContactoContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    margin: 6rem 0;
+    padding: 2.5rem 0;
     @media (max-width: 800px) {
-        margin: 3rem 0;
+        margin: 1rem 0 3rem 0;
     }
 `
 
@@ -49,9 +62,9 @@ const Img = styled.img`
 `
 
 const Link = styled.a`
-    color: #478484;
+    color: #6F81A9;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
@@ -72,8 +85,8 @@ const Link = styled.a`
 
 const Contacto = () => {
     return(
-        <>
-        <Title text="CONTACTO"/>
+        <Fondo>
+        <Title text="Contacto"/>
             <ContactoContent>
                 <DivIconos>
                     <Div>
@@ -96,7 +109,7 @@ const Contacto = () => {
                     </Div>
                 </DivIconos>
             </ContactoContent>
-        </>
+        </Fondo>
     )
 }
 

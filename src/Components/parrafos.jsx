@@ -2,14 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const Parrafo = styled.p`
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 26px;
-    color: #478484;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #6F81A9;
     text-align: center;
+    line-height: 2rem;
+
     @media (max-width: 800px) {
-        font-size: 1.2rem;
+        font-size: 1rem;
         width: 100%;
     }
 `

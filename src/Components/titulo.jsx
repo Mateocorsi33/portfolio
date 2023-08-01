@@ -2,14 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const Titulo = styled.h1`
-    font-family: 'roboto';
-    font-size: 40px;
-    font-weight: 400;
-    color:#464646;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #6F81A9;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
     @media (max-width: 800px) {
         font-size: 2rem;
+        margin-top:2rem;
     }
 `
 

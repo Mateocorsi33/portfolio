@@ -8,7 +8,6 @@ import Menu from './elementosPhone';
 
 
 const Nav = styled.nav`
-  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,9 +26,9 @@ const Nav = styled.nav`
 
 const InicioLink = styled(Link)`
     text-decoration: none;
-    color: #478484;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.375rem;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
     font-weight: 500;
     cursor: pointer;
     @media (max-width: 800px) {
@@ -40,9 +39,10 @@ const InicioLink = styled(Link)`
 
 const NavLink = styled(Link)`
     text-decoration: none;
-    color: #478484;
-    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    font-weight: 400;
     cursor: pointer;
     &:hover {
         transition: .3s;
@@ -76,7 +76,7 @@ const Img = styled.img`
 const Ul = styled.ul`
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    gap: 2rem;
 
     @media (max-width: 800px) {
       display: none;
@@ -104,7 +104,7 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-          <InicioLink to="/" style={{}}>MATEO CORSI</InicioLink> 
+          <InicioLink to="/" style={{}}>Mateo Corsi</InicioLink> 
         <Ul>
             <List><NavLink to="/sobre-mi" style={{}}>Sobre mi</NavLink></List>
             <List><NavLink to='/proyectos' style={{}}>Proyectos</NavLink></List>
