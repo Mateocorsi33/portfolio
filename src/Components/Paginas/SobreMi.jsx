@@ -42,6 +42,7 @@ const ContentSobreMi = styled.div`
             align-items: center;
             width: 95%;
             padding: 2.5%;
+            margin-top: 2rem;
             gap:1rem;
     }
 `

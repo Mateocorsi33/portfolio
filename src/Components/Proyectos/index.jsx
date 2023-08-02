@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Title from "../titulo";
 import imgProyect1 from "../../assets/proyectogranja.png";
 import imgProyect2 from "../../assets/proyectoencriptador.png";
-import vector from "../../assets/vector-links.png";
 
 
 const DivPro = styled.div`
@@ -118,7 +117,7 @@ const Encabezado = styled.h1`
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
-    color: #6F81A9;
+    color: #2B4987;
     line-height: normal;
     margin: 0;
     @media (max-width: 800px) {
@@ -146,9 +145,14 @@ const Boton = styled.a`
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: #2B4987;
+    background-color: #2B4987;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    padding: .8rem 1.5rem;
+    color: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -156,22 +160,14 @@ const Boton = styled.a`
     text-decoration: none;
     margin-top: 3rem;
     &:hover {
-        color: #6F81A9;
+        background-color: #6F81A9;
+        transform: scale(1.1);
     }
     @media (max-width: 800px) {
         font-size: 1.2rem;
     }
 `
 
-const Vector = styled.img`
-    margin-left: 1rem;
-    padding-top: .3rem;
-    width: .8rem;
-    @media (max-width: 800px) {
-        margin-left: .6rem;
-        width: .6rem;
-    }
-`
 
 const Proyectos = () => {
     return(
@@ -182,14 +178,14 @@ const Proyectos = () => {
                 <Text>
                     <Encabezado>Granja Los Pibes</Encabezado>
                     <Descripcion>Desarrollo y diseño de pagina web para la ONG, Granja Los Pibes, desarrollo responsive utilizando React y Styled Components</Descripcion>
-                    <Boton href="https://webgranjalospibes.vercel.app/">Ver completo<Vector src={vector}/></Boton>
+                    <Boton href="https://webgranjalospibes.vercel.app/">Ver completo</Boton>
                 </Text>
             </Proyecto1>
             <Proyecto2>
                 <Text2>
                     <Encabezado>Encriptador de texto</Encabezado>
                     <Descripcion>Para este proyecto desarrollé un encriptador de texto utilizando HTML5, CSS3 y JavaScript.</Descripcion>
-                    <Boton href="https://encriptador-mateofront.vercel.app/">Ver completo<Vector src={vector}/></Boton>
+                    <Boton href="https://encriptador-mateofront.vercel.app/">Ver completo</Boton>
                 </Text2>
                 <Link href="https://encriptador-mateofront.vercel.app/"><Img src={imgProyect2}/></Link>
             </Proyecto2>

@@ -11,7 +11,7 @@ const Fondo = styled.div`
     padding: 2rem 0 0 0;
     
     @media (max-width: 800px) {
-            
+     
     }
 `
 

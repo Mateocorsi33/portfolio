@@ -162,14 +162,18 @@ const Ul = styled.ul`
 
     @media (max-width: 800px) {
       display: ${props => props.showMenu ? 'flex' : 'none'};
+      position: absolute;
+      width: 100%;
+      height: auto;
       justify-content: center;
       text-align: center;
       flex-direction: column;
-      background-color: #2A4886;
-      /* box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.09); */
-      padding: 1rem 0 0 0;
-      margin: 0;
+      background-color: #6F81A9;
+      box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.09);
+      padding: 1.5rem 0 0 0;
+      margin: 12.7rem 0 0 0;
       gap: 1.5rem;
+      border-bottom: 1px solid #ffffff;
     }
 `;
 
