@@ -53,9 +53,9 @@ const NavLink = styled(Link)`
         opacity: 70%;
     }
     @media (max-width: 800px) {
-      font-size: 1rem;
+      font-size: 1.1rem;
       text-decoration: none;
-      color: #ffffff;
+      color: #6F81A9;
     }
 `;
 
@@ -162,18 +162,15 @@ const Ul = styled.ul`
 
     @media (max-width: 800px) {
       display: ${props => props.showMenu ? 'flex' : 'none'};
-      position: absolute;
-      width: 100%;
-      height: auto;
       justify-content: center;
       text-align: center;
       flex-direction: column;
-      background-color: #6F81A9;
+      background-color: #ffffff;
       box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.09);
       padding: 1.5rem 0 0 0;
-      margin: 12.7rem 0 0 0;
+      margin: 0;
       gap: 1.5rem;
-      border-bottom: 1px solid #ffffff;
+      border-bottom: 1px solid #6F81A9;
     }
 `;
 
