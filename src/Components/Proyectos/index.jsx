@@ -174,11 +174,11 @@ const Proyectos = () => {
         <DivPro>
             <Title text="Proyectos"/>
             <Proyecto1>     
-                <Link href="https://webgranjalospibes.vercel.app/"><Img src={imgProyect1}/></Link>
+                <Link href="https://www.granjalospibes.com.ar/"><Img src={imgProyect1}/></Link>
                 <Text>
                     <Encabezado>Granja Los Pibes</Encabezado>
                     <Descripcion>Desarrollo y diseño de pagina web para la ONG, Granja Los Pibes, desarrollo responsive utilizando React y Styled Components</Descripcion>
-                    <Boton href="https://webgranjalospibes.vercel.app/">Ver completo</Boton>
+                    <Boton href="https://www.granjalospibes.com.ar/">Ver completo</Boton>
                 </Text>
             </Proyecto1>
             <Proyecto2>

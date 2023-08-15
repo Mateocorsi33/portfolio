@@ -87,7 +87,7 @@ const PageProyectos = () => {
         <Fondo>
             <Title text="PROYECTOS" />
             <ContentProyect>
-                <Proyect href="https://webgranjalospibes.vercel.app/">
+                <Proyect href="https://www.granjalospibes.com.ar/">
                     <Img src={fotoProOne}/>
                     <Titulo>Diseño y Desarrollo Web - Granja Los Pibes</Titulo>
                 </Proyect>
