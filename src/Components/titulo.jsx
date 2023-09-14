@@ -16,6 +16,6 @@ const Titulo = styled.h1`
 
 export default function Title (props) {
     return (
-            <Titulo>{props.text}</Titulo>
+            <Titulo data-aos="fade-up">{props.text}</Titulo>
     ) 
 }

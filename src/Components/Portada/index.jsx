@@ -12,6 +12,7 @@ const Fondo = styled.div`
     align-items: center;
     gap: 1rem;
     margin: 4rem 5rem 9rem 5rem;
+    overflow: hidden;
 
     @media (max-width: 800px) {
         background-attachment: fixed;
@@ -43,6 +44,8 @@ const Titulo = styled.h1`
     font-weight: 800;
     color: #ffffff;
     margin: 0;
+    animation: bounceInLeft;
+    animation-duration: 1s;
 
     @media (max-width: 800px) {
         font-size: 2rem;
@@ -54,6 +57,9 @@ const Subtitulo = styled.h3`
     font-size: 1.8rem;
     font-weight: 500;
     margin: .5rem 0;
+    animation: bounceInLeft;
+    animation-duration: 1.2s;
+
     @media (max-width: 800px) {
         font-size: 1.5rem;
         padding-bottom: .4rem;
@@ -64,6 +70,9 @@ const Parrafo = styled.p`
     font-weight: 300;
     font-size: 1.2rem;
     margin: .5rem 0;
+    animation: bounceInLeft;
+    animation-duration: 1.3s;
+
     @media (max-width: 800px) {
         font-size: 1rem;
         padding-bottom: .4rem;
@@ -78,6 +87,9 @@ const Links = styled.div`
     font-weight: 400;
     margin-top: 6rem;
     gap: 2rem;
+    animation: bounceInLeft;
+    animation-duration: 1.3s;
+
     @media (max-width: 800px) {
         justify-content: center;
         font-size: .8rem;
@@ -116,7 +128,9 @@ const Imagen = styled.img`
     height: 25rem;
     border-radius: 10rem;
     margin-top: 3rem;
-
+    animation: fadeInRight;
+    animation-duration: 1s;
+    
     /* &:hover {
         animation-duration: 2s;
         animation-name: slidein;

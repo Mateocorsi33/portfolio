@@ -15,7 +15,8 @@ const Fondo = styled.div`
     width: 100%;
     height: auto;
     margin: 0;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
+    padding-top: 1rem;
     @media (max-width: 800px) {
             
     }
@@ -87,7 +88,7 @@ const Contacto = () => {
     return(
         <Fondo>
         <Title text="Contacto"/>
-            <ContactoContent>
+            <ContactoContent data-aos="fade-up">
                 <DivIconos>
                     <Div>
                         <Img src={email}/>

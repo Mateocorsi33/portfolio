@@ -134,8 +134,8 @@ const BotonMenu = styled.button`
 const ImgMenu = styled.img`
     display: flex;
     align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
 
     &:hover {
             transition: .3s;
@@ -146,8 +146,8 @@ const ImgMenu = styled.img`
 const ImgClose = styled.img`
     display: flex;
     align-items: center;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
 
     &:hover {
             transition: .3s;
@@ -159,6 +159,8 @@ const Ul = styled.ul`
     display: none;
     flex-direction: row;
     gap: 3rem;
+    animation: fadeInDownBig;
+    animation-duration: .3s;
 
     @media (max-width: 800px) {
       display: ${props => props.showMenu ? 'flex' : 'none'};
@@ -176,6 +178,9 @@ const Ul = styled.ul`
 
 const List = styled.li`
   list-style-type: none;
+  animation: bounceIn;
+    animation-duration: 2s;
+  
   &:hover {
         transform: scale(1.1);
         } 

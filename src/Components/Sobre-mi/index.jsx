@@ -23,6 +23,7 @@ const DivSobre = styled.div`
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
+    padding: 2rem 0;
     @media (max-width: 800px) {
         margin: 0 5%;
         width: 90%;
@@ -33,7 +34,7 @@ const DivSobre = styled.div`
 const SobreMi = () => {
     return(
         <Fondo>
-            <DivSobre>
+            <DivSobre data-aos="fade-up">
                 <Title text="Sobre mi"/>
                 <Paragraph text="¡Hola! Soy Mateo, desarrollador Front-End. Con conocimientos en HTML, CSS, JavaScript y React, cuento con habilidades en diseño de interfaces atractivas, busco oportunidades para crecer y aprender de profesionales experimentados. Comprometido, comunicativo y dispuesto a enfrentar desafíos, estoy emocionado por unirme a un equipo y contribuir con mi pasión y creatividad. Contacto: Mateofrontend@gmail.com"/>
             </DivSobre>

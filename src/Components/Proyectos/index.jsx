@@ -173,7 +173,7 @@ const Proyectos = () => {
     return(
         <DivPro>
             <Title text="Proyectos"/>
-            <Proyecto1>     
+            <Proyecto1 data-aos="fade-right">     
                 <Link href="https://www.granjalospibes.com.ar/"><Img src={imgProyect1}/></Link>
                 <Text>
                     <Encabezado>Granja Los Pibes</Encabezado>
@@ -181,7 +181,7 @@ const Proyectos = () => {
                     <Boton href="https://www.granjalospibes.com.ar/">Ver completo</Boton>
                 </Text>
             </Proyecto1>
-            <Proyecto2>
+            <Proyecto2 data-aos="fade-left">
                 <Text2>
                     <Encabezado>Encriptador de texto</Encabezado>
                     <Descripcion>Para este proyecto desarrollé un encriptador de texto utilizando HTML5, CSS3 y JavaScript.</Descripcion>

@@ -30,6 +30,7 @@ const SkillsContent = styled.div`
     justify-content: center;
     align-items: center;
     margin: 2.8rem 0 5rem 0;
+    padding: 2rem;
     gap: 4rem;
     @media (max-width: 800px) {
         flex-wrap: wrap;
@@ -53,8 +54,8 @@ const Img = styled.img`
 const Skills = () => {
     return(
         <Fondo>
-            <Title text="Skills" />
-            <SkillsContent>
+            <Title text="Skills" data-aos="fade-up"/>
+            <SkillsContent data-aos="fade-up">
                 <Img src={html5}/>
                 <Img src={css3}/>
                 <Img src={js}/>
