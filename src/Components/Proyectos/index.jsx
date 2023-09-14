@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Title from "../titulo";
-import imgProyect1 from "../../assets/proyectogranja.png";
+import imgProyect1 from "../../assets/proyectogranj.png";
 import imgProyect2 from "../../assets/proyectoencriptador.png";
 
 
@@ -14,6 +14,8 @@ const DivPro = styled.div`
     gap: 1.5rem;
     width: 100%;
     padding-bottom: 2.5rem;
+    overflow: hidden;
+    
     @media (max-width: 800px) {
         margin: 0;
     }
@@ -26,15 +28,19 @@ const Proyecto1 = styled.div`
     justify-content: space-around;
     gap: 3rem;
     margin: 3rem 0;
+
     @media (max-width: 800px) {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
         gap: 1rem;
         margin: 1rem 0;
         width: 90%;
-        padding: 2rem 0 3.5rem 0;
+        padding: 2rem 0 1rem 0;
         border-bottom: 1px solid #6F81A9;
     }
 `
@@ -52,9 +58,12 @@ const Proyecto2 = styled.div`
         align-items: center;
         justify-content: center;
         text-align: center;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
         gap: 1rem;
         margin: 1rem 0;
-        padding: 2rem 0 3.5rem 0;
+        padding: 2rem 0 1rem 0;
         border-bottom: 1px solid #6F81A9;
         width: 90%;
     }
@@ -98,7 +107,7 @@ const Text2 = styled.div`
 `
 
 const Img = styled.img`
-    width: 20rem;
+    width: 16rem;
     height: fit-content;
     border-radius: 10px;
     cursor: pointer;
@@ -130,13 +139,13 @@ const Descripcion = styled.p`
     width: 36rem;
     color: #6F81A9;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin: 0;
     @media (max-width: 800px) {
-        font-size: 1.2rem;
+        font-size: .9rem;
         width: 90%;
     }
 `
@@ -164,6 +173,7 @@ const Boton = styled.a`
         transform: scale(1.1);
     }
     @media (max-width: 800px) {
+        margin: 1rem;
         font-size: 1.2rem;
     }
 `

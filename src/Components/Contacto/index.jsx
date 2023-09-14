@@ -28,6 +28,8 @@ const ContactoContent = styled.div`
     align-items: center;
     gap: 3rem;
     padding: 2.5rem 0;
+    overflow: hidden;
+    
     @media (max-width: 800px) {
         margin: 1rem 0 3rem 0;
     }
