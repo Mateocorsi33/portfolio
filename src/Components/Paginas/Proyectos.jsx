@@ -43,15 +43,16 @@ const Proyect = styled.a`
     background-color: #ffffff;
     box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    width: 80%;
+    width: 20%;
     padding: 1rem 3rem;
     gap: 1rem;
     &:hover {
         transform: scale(1.1);
     }
     @media (max-width: 800px) {
-        padding: 1rem;
-        margin: 1.5rem 0;
+        width: 80%;
+        padding: 3rem 1rem;
+        margin: 1rem 0;
         border-bottom: 1px solid #6F81A9;
     }
 `

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Titulo = styled.h1`
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: #6F81A9;
     text-align: center;

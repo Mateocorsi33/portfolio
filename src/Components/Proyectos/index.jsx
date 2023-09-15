@@ -40,7 +40,7 @@ const Proyecto1 = styled.div`
         gap: 1rem;
         margin: 1rem 0;
         width: 75%;
-        padding: 2rem 0 1rem 0;
+        padding: 2rem .5rem 1rem .5rem;
         border-bottom: 1px solid #6F81A9;
     }
 `
@@ -63,7 +63,7 @@ const Proyecto2 = styled.div`
         border-radius: 10px;
         gap: 1rem;
         margin: 1rem 0;
-        padding: 2rem 0 1rem 0;
+        padding: 2rem .5rem 1rem .5rem;
         border-bottom: 1px solid #6F81A9;
         width: 75%;
     }
@@ -85,7 +85,7 @@ const Text = styled.div`
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        margin: 1rem 0;
+        margin: .5rem 0 1rem 0;
     }
 `
 
@@ -101,7 +101,7 @@ const Text2 = styled.div`
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        margin: 1rem 0;
+        margin: .5rem 0 1rem 0;
         order: 2;
     }
 `
@@ -145,7 +145,7 @@ const Descripcion = styled.p`
     line-height: normal;
     margin: 0;
     @media (max-width: 800px) {
-        font-size: .8rem;
+        font-size: .9rem;
         width: 90%;
     }
 `
