@@ -22,7 +22,7 @@ const Nav = styled.nav`
         justify-content: space-between;
         width: 90%;
         height: auto;
-        padding: 5px 5% 2% 5%;
+        padding: 3px 5% 2% 5%;
         margin: 0;
     }
 `;

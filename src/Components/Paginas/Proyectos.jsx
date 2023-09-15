@@ -51,6 +51,7 @@ const Proyect = styled.a`
     }
     @media (max-width: 800px) {
         padding: 1rem;
+        margin: 1.5rem 0;
         border-bottom: 1px solid #6F81A9;
     }
 `

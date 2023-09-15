@@ -11,7 +11,7 @@ const Titulo = styled.h1`
     overflow: hidden;
     
     @media (max-width: 800px) {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top:2rem;
     }
 `

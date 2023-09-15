@@ -34,7 +34,7 @@ const SkillsContent = styled.div`
     gap: 4rem;
     @media (max-width: 800px) {
         flex-wrap: wrap;
-        margin: 3rem 0;
+        margin: 2rem 0 3rem 0;
         padding-inline: 5%;
     }
 `
@@ -46,8 +46,8 @@ const Img = styled.img`
         transform: scale(1.1);
     }
     @media (max-width: 800px) {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.7rem;
+        height: 2.7rem;
     }
 `
 
