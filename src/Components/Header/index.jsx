@@ -13,7 +13,6 @@ const BarraNav = styled.div`
         padding: 0;
         flex-direction: column;
         justify-content: center;
-        border-bottom: .5px solid #ccd1de;
     }
 `
 

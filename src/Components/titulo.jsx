@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Titulo = styled.h1`
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #6F81A9;
     text-align: center;
@@ -11,7 +11,7 @@ const Titulo = styled.h1`
     overflow: hidden;
     
     @media (max-width: 800px) {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top:2rem;
     }
 `

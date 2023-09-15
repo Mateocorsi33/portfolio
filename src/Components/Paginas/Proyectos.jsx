@@ -14,7 +14,6 @@ const Fondo = styled.div`
     padding: 2rem 0 4rem 0;
 
     @media (max-width: 800px) {
-            
     }
 `
 
@@ -29,7 +28,9 @@ const ContentProyect = styled.div`
     padding: 5%;
     margin-bottom: 6rem;
     @media (max-width: 800px) {
-        gap: 2rem;
+        gap: 5rem;
+        padding: 1rem 5%;
+        flex-direction: column;
     }
 `
 
@@ -39,19 +40,24 @@ const Proyect = styled.a`
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 80%;
+    padding: 1rem 3rem;
     gap: 1rem;
     &:hover {
         transform: scale(1.1);
     }
     @media (max-width: 800px) {
-        padding: 4rem 0 6rem 0;
+        padding: 1rem;
         border-bottom: 1px solid #6F81A9;
     }
 `
 
 const Img = styled.img`
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 5px;
     cursor: pointer;
     &:hover {
@@ -59,15 +65,15 @@ const Img = styled.img`
         opacity: 70%;
     }
     @media (max-width: 800px) {
-        width: 70%;
+        width: 80%;
         height: auto;
     }
 `
 
 const Titulo = styled.h1`
-    width: 20rem;
+    width: fit-content;
     text-align: center;
-    margin: 2rem 0 0 0;
+    margin: 1rem 1rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
@@ -76,7 +82,8 @@ const Titulo = styled.h1`
     line-height: normal;
     cursor: pointer;
     @media (max-width: 800px) {
-        font-size: 1.3rem;
+        font-size: 1rem;
+        margin: 1rem;
     }
 `
 
@@ -86,7 +93,7 @@ const PageProyectos = () => {
     return(
         <Fondo>
             <Title text="PROYECTOS" />
-            <ContentProyect>
+            <ContentProyect data-aos="flip-up">
                 <Proyect href="https://www.granjalospibes.com.ar/">
                     <Img src={fotoProOne}/>
                     <Titulo>Diseño y Desarrollo Web - Granja Los Pibes</Titulo>
@@ -97,7 +104,7 @@ const PageProyectos = () => {
                 </Proyect>
                 <Proyect href="https://www.figma.com/proto/OC7FuSrgj7XxwHWUiddgzl/Epoca-Dorada?node-id=211-225&starting-point-node-id=211%3A225&mode=design&t=BM7xFUQmvez6qEsf-1">
                     <Img src={fotoProThree}/>
-                    <Titulo>Diseño de aplicacion movil</Titulo>
+                    <Titulo>Diseño de aplicacion movil - Epoca Dorada</Titulo>
                 </Proyect>
             </ContentProyect>
         </Fondo>

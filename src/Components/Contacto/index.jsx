@@ -15,7 +15,7 @@ const Fondo = styled.div`
     width: 100%;
     height: auto;
     margin: 0;
-    padding-bottom: 6rem;
+    padding-bottom: 10rem;
     padding-top: 1rem;
     @media (max-width: 800px) {
             
@@ -51,7 +51,8 @@ const Div = styled.div`
     align-items: center;
     gap:1rem;
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.01);
+        opacity: 90%;
     }
 `
 

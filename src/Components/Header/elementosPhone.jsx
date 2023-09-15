@@ -22,7 +22,7 @@ const Nav = styled.nav`
         justify-content: space-between;
         width: 90%;
         height: auto;
-        padding: 0 5% 2% 5%;
+        padding: 5px 5% 2% 5%;
         margin: 0;
     }
 `;
@@ -172,7 +172,6 @@ const Ul = styled.ul`
       padding: 1.5rem 0 0 0;
       margin: 0;
       gap: 1.5rem;
-      border-bottom: 1px solid #6F81A9;
     }
 `;
 
