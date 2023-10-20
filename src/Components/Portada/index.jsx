@@ -170,7 +170,7 @@ const Portada = () => {
                     </div>
                     <Links>
                         <Link download= 'CV - Mateo Corsi' href={cv}>Descargar CV<Vector src={vector}/></Link>
-                        <Link href="http://github.com/Mateofront">Github<Vector src={vector}/></Link>
+                        <Link href="http://github.com/Mateocorsi33">Github<Vector src={vector}/></Link>
                         <Link href="http://www.linkedin.com/in/mateocorsi">Linkedin<Vector src={vector}/></Link>
                     </Links>
                 </Texto>

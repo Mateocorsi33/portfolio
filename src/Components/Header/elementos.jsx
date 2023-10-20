@@ -112,7 +112,7 @@ const Navbar = () => {
             <Iconos>
               <LinkRedes href="mailto: Mateofrontend@gmail.com"><Img src={email}/></LinkRedes>
               <LinkRedes href="http://www.linkedin.com/in/mateocorsi"><Img src={linkedin}/></LinkRedes>
-              <LinkRedes href="http://github.com/Mateofront"><Img src={github}/></LinkRedes>
+              <LinkRedes href="http://github.com/Mateocorsi33"><Img src={github}/></LinkRedes>
             </Iconos>
         </Ul>
       </Nav>

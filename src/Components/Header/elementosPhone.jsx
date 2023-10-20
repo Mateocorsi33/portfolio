@@ -214,7 +214,7 @@ const Menu = () => {
             <Iconos>
                 <LinkRedes href="mailto: Mateofrontend@gmail.com" onClick={closeMenu}><Img src={email}/></LinkRedes>
                 <LinkRedes href="http://www.linkedin.com/in/mateocorsi" onClick={closeMenu}><Img src={linkedin}/></LinkRedes>
-                <LinkRedes href="http://github.com/Mateofront" onClick={closeMenu}><Img src={github}/></LinkRedes>
+                <LinkRedes href="http://github.com/Mateocorsi33" onClick={closeMenu}><Img src={github}/></LinkRedes>
             </Iconos>
         </Ul>
     </>
