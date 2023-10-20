@@ -109,7 +109,7 @@ const Contacto = () => {
                     </Div>
                     <Div>
                         <Img src={github}/>
-                        <Link href="http://github.com/Mateocorsi33">github.com/Mateofront</Link>
+                        <Link href="http://github.com/Mateocorsi33">github.com/Mateocorsi33</Link>
                     </Div>
                 </DivIconos>
             </ContactoContent>
