@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Title from "../titulo";
 import imgProyect1 from "../../assets/proyectogranj.png";
-import imgProyect2 from "../../assets/proyectoencriptador.png";
+import imgProyect2 from "../../assets/proyectoairbnb.png";
 
 
 const DivPro = styled.div`
@@ -28,15 +28,18 @@ const Proyecto1 = styled.div`
     justify-content: space-around;
     gap: 3rem;
     margin: 3rem 0;
+    padding: 3rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    max-width: 960px;
+    width: 100%;
+    height: auto;
 
     @media (max-width: 800px) {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        background-color: #ffffff;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
         gap: 1rem;
         margin: 1rem 0;
         width: 75%;
@@ -53,14 +56,17 @@ const Proyecto2 = styled.div`
     text-align: end;
     gap: 3rem;
     margin: 3rem 0;
+    padding: 3rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    max-width: 960px;
+    width: 100%;
+    height: auto;
     @media (max-width: 800px) {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        background-color: #ffffff;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
         gap: 1rem;
         margin: 1rem 0;
         padding: 2rem .5rem 1rem .5rem;
@@ -111,11 +117,7 @@ const Img = styled.img`
     height: fit-content;
     border-radius: 10px;
     cursor: pointer;
-    &:hover {
-        width: 20.5rem;
-        transition: .3s;
-        opacity: 70%;
-    }
+
     @media (max-width: 800px) {
         width:60%;
     }
@@ -173,9 +175,20 @@ const Boton = styled.a`
         transform: scale(1.1);
     }
     @media (max-width: 800px) {
-        margin: 1rem;
-        font-size: 1.2rem;
+        margin: .5rem;
+        font-size: 1rem;
     }
+`
+
+const Box = styled.div`
+    
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    @media (max-width: 800px) {
+            gap: 0;
+        }
 `
 
 
@@ -187,15 +200,21 @@ const Proyectos = () => {
                 <Link href="https://www.granjalospibes.com.ar/"><Img src={imgProyect1}/></Link>
                 <Text>
                     <Encabezado>Granja Los Pibes</Encabezado>
-                    <Descripcion>Desarrollo y diseño de pagina web para la ONG, Granja Los Pibes, desarrollo responsive utilizando React y Styled Components</Descripcion>
-                    <Boton href="https://www.granjalospibes.com.ar/">Ver completo</Boton>
+                    <Descripcion>Realice el diseño, desarrollo y deploy para la pagina web de la ONG, Granja Los Pibes, desarrollo responsive utilizando React.js y Sass</Descripcion>
+                    <Box>
+                        <Boton href="https://www.granjalospibes.com.ar/">Deploy</Boton>
+                        <Boton href="https://github.com/Mateocorsi33/webgranjalospibes">Github</Boton>
+                    </Box>
                 </Text>
             </Proyecto1>
             <Proyecto2 data-aos="fade-left">
                 <Text2>
-                    <Encabezado>Encriptador de texto</Encabezado>
-                    <Descripcion>Para este proyecto desarrollé un encriptador de texto utilizando HTML5, CSS3 y JavaScript.</Descripcion>
-                    <Boton href="https://encriptador-mateofront.vercel.app/">Ver completo</Boton>
+                    <Encabezado>Airbnb Clon</Encabezado>
+                    <Descripcion>Participe siendo colaborador de este proyecto, como Front End Developer, donde se realizó un clon de la página de alojamientos de Airbnb.</Descripcion>
+                    <Box>
+                        <Boton href="https://c14-02-m-node-react.vercel.app/">Deploy</Boton>
+                        <Boton href="https://github.com/Mateocorsi33/Clon-de-AirBnb">Github</Boton>
+                    </Box>
                 </Text2>
                 <Link href="https://encriptador-mateofront.vercel.app/"><Img src={imgProyect2}/></Link>
             </Proyecto2>

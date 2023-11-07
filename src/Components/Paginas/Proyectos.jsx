@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Title from "../titulo";
 import fotoProOne from "../../assets/proyectogranj.png";
-import fotoProTwo from "../../assets/proyectoencriptado.png";
-import fotoProThree from "../../assets/diseño.png";
+import fotoProTwo from "../../assets/proyectoairbnb.png";
+import fotoProThree from "../../assets/proyectoencriptado.png";
 
 const Fondo = styled.div`
     display: flex;
@@ -100,13 +100,13 @@ const PageProyectos = () => {
                     <Img src={fotoProOne}/>
                     <Titulo>Diseño y Desarrollo Web - Granja Los Pibes</Titulo>
                 </Proyect>
-                <Proyect href="https://encriptador-mateofront.vercel.app/">
-                    <Img src={fotoProTwo}/>
-                    <Titulo>Desarrollo Web - Encriptador de texto</Titulo>
-                </Proyect>
                 <Proyect href="https://www.figma.com/proto/OC7FuSrgj7XxwHWUiddgzl/Epoca-Dorada?node-id=211-225&starting-point-node-id=211%3A225&mode=design&t=BM7xFUQmvez6qEsf-1">
+                    <Img src={fotoProTwo}/>
+                    <Titulo>Colaborador como Front-End en Clon de Airbnb</Titulo>
+                </Proyect>
+                <Proyect href="https://encriptador-mateofront.vercel.app/">
                     <Img src={fotoProThree}/>
-                    <Titulo>Diseño de aplicacion movil - Epoca Dorada</Titulo>
+                    <Titulo>Desarrollo Web - Encriptador de texto</Titulo>
                 </Proyect>
             </ContentProyect>
         </Fondo>
