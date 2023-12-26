@@ -4,6 +4,8 @@ import Title from "../titulo";
 import fotoProOne from "../../assets/proyectogranj.png";
 import fotoProTwo from "../../assets/proyectoairbnb.png";
 import fotoProThree from "../../assets/proyectoencriptado.png";
+import fotoProFour from "../../assets/eventwave.png";
+
 
 const Fondo = styled.div`
     display: flex;
@@ -96,6 +98,10 @@ const PageProyectos = () => {
         <Fondo>
             <Title text="PROYECTOS" />
             <ContentProyect data-aos="flip-up">
+                <Proyect href="https://s12-02-m-node-react-gestor-de-eventos.vercel.app/">
+                    <Img src={fotoProFour}/>
+                    <Titulo>Front End Developer - Event Wave</Titulo>
+                </Proyect>
                 <Proyect href="https://www.granjalospibes.com.ar/">
                     <Img src={fotoProOne}/>
                     <Titulo>Diseño y Desarrollo Web - Granja Los Pibes</Titulo>

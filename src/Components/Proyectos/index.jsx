@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Title from "../titulo";
 import imgProyect1 from "../../assets/proyectogranj.png";
 import imgProyect2 from "../../assets/proyectoairbnb.png";
+import imgProyect3 from "../../assets/eventwave.png";
 
 
 const DivPro = styled.div`
@@ -218,6 +219,17 @@ const Proyectos = () => {
                 </Text2>
                 <Link href="https://encriptador-mateofront.vercel.app/"><Img src={imgProyect2}/></Link>
             </Proyecto2>
+            <Proyecto1 data-aos="fade-right">     
+                <Link href="https://s12-02-m-node-react-gestor-de-eventos.vercel.app/"><Img src={imgProyect3}/></Link>
+                <Text>
+                    <Encabezado>Event Wave</Encabezado>
+                    <Descripcion>Participe como Front End Developer de la pagina de eventos de Event Wave.</Descripcion>
+                    <Box>
+                        <Boton href="https://s12-02-m-node-react-gestor-de-eventos.vercel.app/">Deploy</Boton>
+                        <Boton href="https://github.com/No-Country/s12-02-m-node-react">Github</Boton>
+                    </Box>
+                </Text>
+            </Proyecto1>
         </DivPro>
     )   
 }
