@@ -60,6 +60,9 @@ const Skills = () => {
                 <Img src={css3}/>
                 <Img src={js}/>
                 <Img src={react}/>
+                <Img src={java}/>
+                <Img src={node}/>
+                <Img src={mongo}/>
                 <Img src={github}/>
                 <Img src={figma}/>
                 <Img src={adobexd}/>
