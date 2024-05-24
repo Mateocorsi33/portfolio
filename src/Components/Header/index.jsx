@@ -9,7 +9,6 @@ const BarraNav = styled.div`
     padding-bottom: 1rem;
 
     @media (max-width: 800px) {
-        margin-top: .5rem;
         padding: 0;
         flex-direction: column;
         justify-content: center;

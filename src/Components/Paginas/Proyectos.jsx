@@ -55,7 +55,7 @@ const Proyect = styled.a`
         width: 80%;
         padding: 3rem 1rem;
         margin: 1rem 0;
-        border-bottom: 1px solid #28555E;
+        border-bottom: 1px solid #d3d3d3;
     }
 `
 
