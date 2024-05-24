@@ -5,10 +5,9 @@ import Paragraph from "../parrafos";
 
 const Fondo = styled.div`
     display: flex;
-    background-color: #ffffff;
+    background-color: #444440;
     width: 100%;
     height: auto;
-    padding: 2rem 0 0 0;
     
     @media (max-width: 800px) {
      

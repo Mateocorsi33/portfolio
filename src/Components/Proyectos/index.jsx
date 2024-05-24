@@ -11,7 +11,7 @@ const DivPro = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: #444440;
     gap: 1.5rem;
     width: 100%;
     padding-bottom: 2.5rem;
@@ -129,7 +129,7 @@ const Encabezado = styled.h1`
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
-    color: #2B4987;
+    color: #D18C5C;
     line-height: normal;
     margin: 0;
     @media (max-width: 800px) {
@@ -140,11 +140,11 @@ const Encabezado = styled.h1`
 
 const Descripcion = styled.p`
     width: 36rem;
-    color: #6F81A9;
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
     margin: 0;
     @media (max-width: 800px) {
@@ -157,7 +157,7 @@ const Boton = styled.a`
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #2B4987;
+    background-color: #D18C5C;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border: none;
@@ -172,7 +172,7 @@ const Boton = styled.a`
     text-decoration: none;
     margin-top: 3rem;
     &:hover {
-        background-color: #6F81A9;
+        background-color: #ca7b44;
         transform: scale(1.1);
     }
     @media (max-width: 800px) {

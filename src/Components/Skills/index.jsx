@@ -18,7 +18,7 @@ const Fondo = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #444440;
     width: 100%;
     height: auto;
     

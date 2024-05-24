@@ -55,7 +55,7 @@ const Proyect = styled.a`
         width: 80%;
         padding: 3rem 1rem;
         margin: 1rem 0;
-        border-bottom: 1px solid #6F81A9;
+        border-bottom: 1px solid #28555E;
     }
 `
 
@@ -81,7 +81,7 @@ const Titulo = styled.h1`
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
-    color: #6F81A9;
+    color: #28555E;
     font-style: normal;
     line-height: normal;
     cursor: pointer;

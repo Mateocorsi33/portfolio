@@ -11,11 +11,10 @@ const Fondo = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #444440;
     width: 100%;
     height: auto;
     margin: 0;
-    padding-bottom: 10rem;
     padding-top: 1rem;
     @media (max-width: 800px) {
             
@@ -66,7 +65,7 @@ const Img = styled.img`
 `
 
 const Link = styled.a`
-    color: #6F81A9;
+    color: #fff;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;

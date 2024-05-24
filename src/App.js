@@ -6,11 +6,12 @@ import PageSobreMi from './Components/Paginas/SobreMi';
 import PageProyectos from './Components/Paginas/Proyectos';
 import PageContacto from './Components/Paginas/Contacto';
 import Footer from './Components/Footer';
-import fondo from "./assets/fondo11.png";
+import fondo from "./assets/fondo1111.png";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const Div = styled.div` 
-  background-image: url(${fondo});
+  //background-image: url(${fondo});
+  background-color: #444440;
   background-attachment: fixed;
   background-size: cover;
 

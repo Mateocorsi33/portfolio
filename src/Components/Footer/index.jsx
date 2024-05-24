@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import fondo from "../../assets/fondo11.png";
+import logo from "../../assets/mc-logo.png";
 import { Link } from "react-router-dom";
 
 const Fondo = styled.div` 
-  background-image: url(${fondo});
+  //background-image: url(${fondo});
+  background-color: #444440;
   background-attachment: fixed;
   background-size: cover;
   padding: 4rem 5rem 3rem 5rem;
@@ -44,7 +46,7 @@ const Titulo = styled.h1`
     line-height: normal;
     margin:0;
     padding: .5rem 0;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #D18C5C;
     width: 110%;
     @media (max-width: 800px) {
     font-size: 1.1rem;
@@ -117,7 +119,7 @@ const Datos = styled.p`
 const DivCopy = styled.div`
     display: flex;
     justify-content:center;
-    border-top: 2px solid #fff;
+    border-top: 2px solid #D18C5C;
     padding: 1rem 0;
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
@@ -135,7 +137,7 @@ const Footer = () => {
     return(
         <Fondo>
             <FooterContent>
-                    <Links to="/" style={{}}><Nombre>Mateo Corsi</Nombre></Links>
+                    <Links to="/" style={{}}><Nombre><img src={logo} alt="" /></Nombre></Links>
                 <DivLinks>
                     <Navegacion>
                         <Titulo>Navegación</Titulo>

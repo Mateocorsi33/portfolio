@@ -6,10 +6,11 @@ import linkedin from '../../assets/linkedin.png';
 import github from '../../assets/github.png';
 import menu from "../../assets/menu.png";
 import close from "../../assets/close.png";
+import logo from "../../assets/mc-logo.png";
 
 
 const Nav = styled.nav`
-  background-color: #ffffff;
+  background-color: #444440;
   display: none;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +23,7 @@ const Nav = styled.nav`
         justify-content: space-between;
         width: 90%;
         height: auto;
-        padding: 3px 5% 2% 5%;
+        padding: 1rem 5% 1rem 5%;
         margin: 0;
     }
 `;
@@ -31,7 +32,7 @@ const Nav = styled.nav`
 const InicioLink = styled(Link)`
     display: none;
     text-decoration: none;
-    color: #6F81A9;
+    color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.375rem;
     cursor: pointer;
@@ -43,7 +44,7 @@ const InicioLink = styled(Link)`
 
 const NavLink = styled(Link)`
     text-decoration: none;
-    color: #6F81A9;
+    color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1rem;
     cursor: pointer;
@@ -55,7 +56,7 @@ const NavLink = styled(Link)`
     @media (max-width: 800px) {
       font-size: 1.1rem;
       text-decoration: none;
-      color: #6F81A9;
+      color: #fff;
     }
 `;
 
@@ -112,7 +113,7 @@ const BotonMenu = styled.button`
         align-items: center;
         margin: 0;
         padding: 0;
-        background-color: #ffffff;
+        background-color: #444440;
         border-radius: 10px;
         width: fit-content;
         height: auto;
@@ -121,7 +122,7 @@ const BotonMenu = styled.button`
         font-size: 0.8rem;
         font-weight: 400;
         letter-spacing: 0.05em;
-        color: #464646;
+        color: #fff;
         cursor: pointer;
         &:hover {
             transition: .3s;
@@ -167,7 +168,7 @@ const Ul = styled.ul`
       justify-content: center;
       text-align: center;
       flex-direction: column;
-      background-color: #ffffff;
+      background-color: #444440;
       box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.09);
       padding: 1.5rem 0 0 0;
       margin: 0;
@@ -183,6 +184,11 @@ const List = styled.li`
   &:hover {
         transform: scale(1.1);
         } 
+`;
+
+const ImgLogo = styled.img`
+  width: 4rem;
+  margin-top: .5rem;
 `;
 
 
@@ -202,7 +208,7 @@ const Menu = () => {
   return (
     <>
         <Nav>
-            <InicioLink to="/" style={{}} onClick={closeMenu}>Mateo Corsi</InicioLink>
+            <InicioLink to="/" style={{}} onClick={closeMenu}><ImgLogo src={logo} alt="logo" /></InicioLink>
             <BotonMenu onClick={() => setShowMenu(!showMenu)}>
                 {showMenu ? <ImgClose src={close} alt="close"/> : <ImgMenu src={menu}/>}
             </BotonMenu>

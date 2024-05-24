@@ -21,7 +21,6 @@ const Fondo = styled.div`
         flex-direction: column;
         gap: 1rem;
         margin: 0;
-        padding-bottom: 2rem;
     }
 `
 
@@ -42,7 +41,7 @@ const Texto = styled.div`
 const Titulo = styled.h1`
     font-size: 3.8rem;
     font-weight: 800;
-    color: #ffffff;
+    color: #D18C5C;
     margin: 0;
     animation: bounceInLeft;
     animation-duration: 1s;
@@ -106,6 +105,7 @@ const Link = styled.a`
     &:hover {
         transition: .3s;
         padding: 0 .5rem;
+        color: #D18C5C;
         opacity: 70%;
     }
     @media (max-width: 800px) {

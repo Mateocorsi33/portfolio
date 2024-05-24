@@ -4,8 +4,8 @@ import styled from "styled-components";
 const Parrafo = styled.p`
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    font-weight: 400;
-    color: #6F81A9;
+    font-weight: 300;
+    color: #fff;
     text-align: center;
     line-height: 2rem;
 

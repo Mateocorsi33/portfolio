@@ -75,7 +75,7 @@ const Boton = styled.button`
     border: none;
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #6F81A9;
+    color: #28555E;
     font-family: Roboto Condensed;
     font-size: 1.5rem;
     font-style: normal;
@@ -142,8 +142,8 @@ const DivText = styled.div`
 const Parrafo = styled.div`
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
-    font-weight: 400;
-    color: #6F81A9;
+    font-weight: 300;
+    color: #444440;
     text-align: start;
     line-height: 2rem;
 

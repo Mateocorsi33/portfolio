@@ -40,8 +40,8 @@ const Parrafo = styled.div`
     padding-bottom: 1.8rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
-    font-weight: 400;
-    color: #6F81A9;
+    font-weight: 300;
+    color: #444440;
     text-align: center;
     @media (max-width: 800px) {
         width: 90%;
@@ -84,7 +84,7 @@ const Img = styled.img`
 `
 
 const Link = styled.a`
-    color: #6F81A9;
+    color: #28555E;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;

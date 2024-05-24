@@ -5,6 +5,7 @@ import email from '../../assets/email.png'
 import linkedin from '../../assets/linkedin.png';
 import github from "../../assets/github.png";
 import Menu from './elementosPhone';
+import logo from "../../assets/mc-logo.png";
 
 
 const Nav = styled.nav`
@@ -47,6 +48,7 @@ const NavLink = styled(Link)`
     &:hover {
         transition: .3s;
         padding: 0 .2rem;
+        color: #D18C5C;
         opacity: 70%;
     }
 `;
@@ -104,16 +106,16 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-          <InicioLink to="/" style={{}}>Mateo Corsi</InicioLink> 
+          <InicioLink to="/" style={{}}><img src={logo} alt="logo" /></InicioLink> 
         <Ul>
-            <List><NavLink to="/sobre-mi" style={{}}>Sobre mi</NavLink></List>
-            <List><NavLink to='/proyectos' style={{}}>Proyectos</NavLink></List>
-            <List><NavLink to='/contacto' style={{}}>Contacto</NavLink></List>
-            <Iconos>
-              <LinkRedes href="mailto: Mateofrontend@gmail.com"><Img src={email}/></LinkRedes>
-              <LinkRedes href="http://www.linkedin.com/in/mateocorsi"><Img src={linkedin}/></LinkRedes>
-              <LinkRedes href="http://github.com/Mateocorsi33"><Img src={github}/></LinkRedes>
-            </Iconos>
+          <List><NavLink to="/sobre-mi" style={{}}>Sobre mi</NavLink></List>
+          <List><NavLink to='/proyectos' style={{}}>Proyectos</NavLink></List>
+          <List><NavLink to='/contacto' style={{}}>Contacto</NavLink></List>
+          <Iconos>
+            <LinkRedes href="mailto: Mateofrontend@gmail.com"><Img src={email}/></LinkRedes>
+            <LinkRedes href="http://www.linkedin.com/in/mateocorsi"><Img src={linkedin}/></LinkRedes>
+            <LinkRedes href="http://github.com/Mateocorsi33"><Img src={github}/></LinkRedes>
+          </Iconos>
         </Ul>
       </Nav>
       <Menu/>
