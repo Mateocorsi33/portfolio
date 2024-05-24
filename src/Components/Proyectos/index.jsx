@@ -45,7 +45,7 @@ const Proyecto1 = styled.div`
         margin: 1rem 0;
         width: 75%;
         padding: 2rem .5rem 1rem .5rem;
-        border-bottom: 1px solid #6F81A9;
+        border-bottom: 1px solid #444440;
     }
 `
 
@@ -71,7 +71,7 @@ const Proyecto2 = styled.div`
         gap: 1rem;
         margin: 1rem 0;
         padding: 2rem .5rem 1rem .5rem;
-        border-bottom: 1px solid #6F81A9;
+        border-bottom: 1px solid #444440;
         width: 75%;
     }
 `

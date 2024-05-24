@@ -24,19 +24,10 @@ const FooterContent = styled.div`
     flex-direction:column;
     justify-content: space-between;
     gap:3rem;
-`
+    border-top: .5px solid #D18C5C;
+    padding: 2rem 0;
 
-const Nombre = styled.a`
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 500;
-  text-decoration: none;
-  cursor: pointer;
-  @media (max-width: 800px) {
-    font-size: 1.5rem; 
-  }
-`;
+`
 
 const Titulo = styled.h1`
     color: #FFF;
@@ -133,11 +124,16 @@ const DivCopy = styled.div`
     }
 `;
 
+const ImgLogo = styled.img`
+  width: 5rem;
+  margin-top: .5rem;
+`;
+
 const Footer = () => {
     return(
         <Fondo>
             <FooterContent>
-                    <Links to="/" style={{}}><Nombre><img src={logo} alt="" /></Nombre></Links>
+                    <Links to="/" style={{}}><ImgLogo src={logo} alt="logo" /></Links>
                 <DivLinks>
                     <Navegacion>
                         <Titulo>Navegación</Titulo>
