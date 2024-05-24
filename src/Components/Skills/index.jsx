@@ -8,7 +8,9 @@ import react from "../../assets/react.png";
 import github from "../../assets/github2.png";
 import adobexd from "../../assets/adobexd.png";
 import figma from "../../assets/figma.png";
-
+import mongo from "../../assets/mongo.png";
+import java from "../../assets/java.png";
+import node from "../../assets/node.png";
 
 
 const Fondo = styled.div`
@@ -27,15 +29,18 @@ const Fondo = styled.div`
 const SkillsContent = styled.div`
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 60%;
     margin: 2.8rem 0 5rem 0;
     padding: 2rem;
-    gap: 4rem;
+    gap: 5rem;
     @media (max-width: 800px) {
         flex-wrap: wrap;
         margin: 2rem 0 3rem 0;
         padding-inline: 5%;
+        width: 90%;
     }
 `
 
