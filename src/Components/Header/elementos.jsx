@@ -89,6 +89,10 @@ const List = styled.li`
   list-style-type: none;
 `;
 
+const ImgLogo = styled.img`
+  width:7rem;
+`;
+
 
 
 const Navbar = () => {
@@ -106,7 +110,7 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-          <InicioLink to="/" style={{}}><img src={logo} alt="logo" /></InicioLink> 
+          <InicioLink to="/" style={{}}><ImgLogo src={logo} alt="logo" /></InicioLink> 
         <Ul>
           <List><NavLink to="/sobre-mi" style={{}}>Sobre mi</NavLink></List>
           <List><NavLink to='/proyectos' style={{}}>Proyectos</NavLink></List>
